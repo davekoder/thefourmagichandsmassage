@@ -1,0 +1,35 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .trans-background {
+    background: #41b3a3;
+    filter: alpha(opacity=90);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.6;
+    /* CSS3 */
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 70%;
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px black;
+  }
+  .company-logo {
+    position: relative;
+    top: 150px;
+    height: 450px;
+    width: 500px;
+  }
+  .banner-message {
+    position: relative;
+    top: 25%;
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+  }
+}
