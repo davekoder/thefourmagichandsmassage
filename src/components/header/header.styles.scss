@@ -1,0 +1,32 @@
+.header {
+  border: 1px solid gray;
+  .options {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .option {
+      font-family: "Montserrat Alternates", sans-serif;
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+
+      h3 {
+        transition: 0.5s;
+      }
+
+      h3:hover {
+        color: orange;
+        transition: 0.2s;
+      }
+
+      .company-logo {
+        position: relative;
+        width: 170px;
+      }
+    }
+  }
+}
