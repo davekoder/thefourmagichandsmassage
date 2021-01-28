@@ -8,6 +8,7 @@ import About from "./pages/about/about.page";
 import Contact from "./pages/contact/contact.page";
 import Appointment from "./pages/appointment/appointment.page";
 import Services from "./pages/services/services.page";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = () => (
