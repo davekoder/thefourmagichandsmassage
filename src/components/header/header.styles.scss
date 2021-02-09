@@ -1,23 +1,25 @@
 .header {
-  position: relative;
+  position: absolute;
+  z-index: 1500;
   top: 0;
   left: 0;
   height: 110px;
+  width: 100vw;
 
-  .background {
-    background: #ccc;
-    filter: alpha(opacity=60);
-    /* IE */
-    -moz-opacity: 0.6;
-    /* Mozilla */
-    opacity: 0.6;
-    /* CSS3 */
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
+  // .background {
+  //   background: #ccc;
+  //   filter: alpha(opacity=60) !important;
+  //   /* IE */
+  //   -moz-opacity: 0.6 !important;
+  //   /* Mozilla */
+  //   opacity: 0.6 !important;
+  //   /* CSS3 */
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  // }
   .options {
     position: relative;
     top: 0;
@@ -33,7 +35,7 @@
     .option {
       font-family: "Montserrat Alternates", sans-serif;
       text-decoration: none;
-      color: #232322;
+      color: white;
       font-size: 15px;
 
       h3 {

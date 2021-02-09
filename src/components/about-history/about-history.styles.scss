@@ -1,0 +1,39 @@
+.about-history-section {
+  position: relative;
+  width: 100vw;
+  .container {
+    position: relative;
+    display: flex;
+    width: 450vw;
+    height: 70vh;
+    top: 150px;
+    z-index: 1500;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: 2s opacity;
+
+    h2,
+    h1 {
+      color: white;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+
+      img {
+        width: 250px;
+        padding: 0px;
+        margin: 0px 15px;
+        border: 2px solid white;
+        border-radius: 10px;
+      }
+    }
+  }
+  .fade-in {
+    opacity: 1;
+  }
+}

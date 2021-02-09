@@ -1,0 +1,58 @@
+.appointment-page {
+  position: relative;
+
+  .setAppointment-bgImage {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .set-appointment {
+    position: absolute;
+    z-index: 500;
+    max-height: 500px;
+
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .setAppointmentBackground {
+      position: relative;
+      z-index: 1000;
+      height: 100vh;
+      width: 100vw;
+      top: 100px;
+      background: white;
+      opacity: 0.9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .appointmentCalendar {
+        position: absolute;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          font-weight: bolder;
+          opacity: 1;
+        }
+        form {
+          .btn {
+            position: absolute;
+            top: 340px !important;
+            left: 480px;
+          }
+        }
+      }
+    }
+  }
+}

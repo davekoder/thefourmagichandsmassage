@@ -1,22 +1,16 @@
 import React from "react";
 import Landing from "../../components/landing/landing.component";
-import BackgroundSlider from "react-background-slider";
+import Footer from "../../components/footer/footer.component";
+import "./home.styles.scss";
 
 const Home = () => {
-  const image1 = "https://gdurl.com/edg2";
-  const image2 = "https://gdurl.com/VwWG";
-  const image3 = "https://gdurl.com/yUFz";
-  const image4 = "https://gdurl.com/dmEX";
-  const image5 = "https://gdurl.com/AKgA";
-  const image6 = "https://gdurl.com/wjuD";
   return (
-    <div className='landing'>
-      <BackgroundSlider
-        images={[image1, image2, image3, image4, image5, image6]}
-        duration={5}
-        transition={1}
-      />
+    <div className='home'>
+      <video autoPlay loop muted className='videoBackground'>
+        <source src='https://gdurl.com/u2cI' type='video/mp4' />
+      </video>
       <Landing />
+      <Footer />
     </div>
   );
 };

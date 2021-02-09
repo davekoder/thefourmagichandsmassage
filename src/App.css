@@ -1,23 +1,11 @@
-/* React Transition Group */
-
-.fade-appear,
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
+.App {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  bottom: 0px !important;
+  padding: 0px !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms linear 150ms;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0;
-  transition: opacity 150ms linear;
-}
-
-/* React Transition Group */

@@ -1,0 +1,87 @@
+.contact-page {
+  position: relative;
+
+  .contact-us-bgImage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .contact-form {
+    position: relative;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 120px;
+    left: 30%;
+    width: 500px;
+    height: 700px;
+    background: #41b3a3;
+    border: 2px solid gray;
+    border-radius: 25px;
+    box-shadow: 2px 4px 1px black;
+    .contact-details {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      padding: 25px;
+
+      .contact-name {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    .contact-us-message {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .user-contact-info {
+        display: flex;
+        flex-direction: row;
+        .contact-email {
+          display: flex;
+          flex-direction: column;
+        }
+        .contact-number {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .contact-message {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-additional {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .contact-submit {
+      margin-top: 20px;
+      margin-right: 25px;
+      align-self: flex-end;
+    }
+    .image {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .contact-form-img {
+        position: relative;
+        width: 40%;
+        height: 100%;
+      }
+    }
+  }
+}
