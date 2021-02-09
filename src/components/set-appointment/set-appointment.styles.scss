@@ -12,9 +12,8 @@
 
   .set-appointment {
     position: absolute;
-    z-index: 500;
     max-height: 500px;
-
+    width: 100%;
     top: 100px;
     display: flex;
     flex-direction: column;
@@ -22,35 +21,45 @@
     justify-content: center;
 
     .setAppointmentBackground {
-      position: relative;
+      position: absolute;
       z-index: 1000;
-      height: 100vh;
+      height: 50vh;
       width: 100vw;
       top: 100px;
       background: white;
-      opacity: 0.9;
+      filter: alpha(opacity=90);
+      /* IE */
+      -moz-opacity: 0.6;
+      /* Mozilla */
+      opacity: 0.6;
+      /* CSS3 */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      .appointmentCalendar {
-        position: absolute;
-        z-index: 2000;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      border: none;
+      box-shadow: 1px 2px 3px black;
+    }
 
-        h1 {
-          font-weight: bolder;
-          opacity: 1;
-        }
-        form {
-          .btn {
-            position: absolute;
-            top: 340px !important;
-            left: 480px;
-          }
+    .appointmentCalendar {
+      position: relative;
+      z-index: 1000;
+      top: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-weight: bolder;
+        opacity: 1;
+      }
+      form {
+        .btn {
+          position: absolute;
+          top: 320px !important;
+          left: 480px;
+          width: 150px;
         }
       }
     }

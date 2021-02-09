@@ -1,12 +1,88 @@
 .services-page {
-  display: flex;
-  position: absolute;
-  z-index: -500;
-  top: 0;
-  left: 0;
+  position: relative;
+  top: 0px;
+  left: 0px;
 
   .bgbackground {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
+  }
+
+  .title {
+    position: relative;
+    z-index: 2000;
+    top: 180px;
+    text-align: center;
+    color: white;
+  }
+
+  .services-list {
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 200px;
+    align-content: center;
+    justify-content: space-around;
+
+    .services-card {
+      position: relative;
+      margin-bottom: 15px;
+      width: 350px;
+      height: 100px;
+      background: #348b7f;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+    .info-logo {
+      position: absolute;
+      z-index: 2500;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      top: 320px;
+      width: 100vw;
+      height: 300px;
+      .services-info-transBG {
+        background: #348b7f;
+        filter: alpha(opacity=90);
+        /* IE */
+        -moz-opacity: 0.6;
+        /* Mozilla */
+        opacity: 0.6;
+        /* CSS3 */
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        bottom: 0px;
+        padding-bottom: 0px;
+        height: 230px;
+        width: 100vw;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 1px 2px 3px black;
+      }
+      .info-card {
+        position: relative;
+        z-index: 2500;
+      }
+      .info-logo-image {
+        position: relative;
+        z-index: 2500;
+        img {
+          width: 250px;
+        }
+      }
+    }
   }
 }
